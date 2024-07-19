@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dívida de Sono</title>
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Div de fundo, possivelmente para efeitos visuais -->
+    <div class="background"></div>
+    
+    <div class="content">
+        <div class="container">
+            <!-- Título da página -->
+            <h1>Calculadora de Sono</h1>
+            
+            <!-- Grupo de entrada para horas de sono necessárias por noite -->
+            <div class="input-group">
+                <label for="required-sleep">Horas de sono necessárias por noite:</label>
+                <input type="number" id="required-sleep" step="0.1" placeholder="Digite o número de horas">
+            </div>
+            
+            <!-- Grupo de entrada para horas dormidas nas 7 noites -->
+            <div class="input-group">
+                <label for="actual-sleep-night1">Horas dormidas na noite 1:</label>
+                <input type="number" id="actual-sleep-night1" step="0.1" placeholder="Digite as horas">
+            </div>
+            <div class="input-group">
+                <label for="actual-sleep-night2">Horas dormidas na noite 2:</label>
+                <input type="number" id="actual-sleep-night2" step="0.1" placeholder="Digite as horas">
+            </div>
+            <div class="input-group">
+                <label for="actual-sleep-night3">Horas dormidas na noite 3:</label>
+                <input type="number" id="actual-sleep-night3" step="0.1" placeholder="Digite as horas">
+            </div>
+            <div class="input-group">
+                <label for="actual-sleep-night4">Horas dormidas na noite 4:</label>
+                <input type="number" id="actual-sleep-night4" step="0.1" placeholder="Digite as horas">
+            </div>
+            <div class="input-group">
+                <label for="actual-sleep-night5">Horas dormidas na noite 5:</label>
+                <input type="number" id="actual-sleep-night5" step="0.1" placeholder="Digite as horas">
+            </div>
+            <div class="input-group">
+                <label for="actual-sleep-night6">Horas dormidas na noite 6:</label>
+                <input type="number" id="actual-sleep-night6" step="0.1" placeholder="Digite as horas">
+            </div>
+            <div class="input-group">
+                <label for="actual-sleep-night7">Horas dormidas na noite 7:</label>
+                <input type="number" id="actual-sleep-night7" step="0.1" placeholder="Digite as horas">
+            </div>
+            
+            <!-- Botões para calcular a dívida de sono e limpar os campos -->
+            <button onclick="calculateSleepDebt()">Calcular Dívida de Sono</button>
+            <button onclick="clearInputs()">Limpar</button>
+            
+            <!-- Div para exibir o resultado do cálculo -->
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+    
+    <!-- Link para o arquivo de scripts JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
